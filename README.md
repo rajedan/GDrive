@@ -6,7 +6,7 @@
 * Introduction
 * Requirements
 * Installation/Setup
-* Working Feature
+* Working Features
 * Future Scope
 * Troubleshooting
 * Authors
@@ -57,14 +57,14 @@ pip install --upgrade httplib2
 ```bash
 pip install fusepy
 ```
-Refer [here](https://pypi.org/project/fusepy/) for installation reference and troubleshoot.
+Refer [here](https://pypi.org/project/fusepy/) for fusepy installation reference and troubleshoot.
 
 ### Working Feature
 > TODO
 ### Future Scope
 > TODO
 ### Troubleshooting
-> TODo
+> TODO
 ### Authors
 
 * [Rajesh Dansena](https://github.com/rajedan) : 20163005
