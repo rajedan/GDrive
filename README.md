@@ -13,7 +13,7 @@
 * Authors
 
 ### Introduction
-This is Linux File System Academic Project for mounting Google Drive as a Local Drive.
+This is an Academic Project to showcase Linux File System. This application mount the Google Drive as a Local Drive.
 This project is based on FUSE library and google drive. Once google drive is mounted as local drive, 
 you would be able to perform couple of operations like show, create, delete, edit files/directories 
 and it will reflect into your google drive and vice versa as well.
