@@ -1,7 +1,8 @@
 # GDrive
-Mount your Google Drive in your Linux System.
---------------------------------------------------
 
+**Mount your Google Drive in your Linux System.**
+
+## Getting Started
 * Introduction
 * Requirements
 * Installation/Setup
@@ -10,13 +11,13 @@ Mount your Google Drive in your Linux System.
 * Troubleshooting
 * Authors
 
-## Introduction
+### Introduction
 This is Linux File System Academic Project for mounting Google Drive as a Local Drive.
 This project is based on FUSE library and google drive. Once google drive is mounted as local drive, 
 you would be able to perform couple of operations like show, create, delete, edit files/directories 
 and it will reflect into your google drive and vice versa as well.
 
-## Requirements
+### Requirements
 
 1. Google account with access to google drive.
 2. Linux machine(Note : We have tested it in Ubuntu 18.04.01 LTS)
@@ -26,7 +27,7 @@ and it will reflect into your google drive and vice versa as well.
 6. google-auth-httplib2	    0.0.3 or above
 7. fusepy                   3.0.1 or above
 
-## Installation/Setup
+### Installation/Setup
 
 1. Google account : Register to [gmail](https://www.google.com/gmail/) account, if you do not have any google account. Now, you access your google drive and 
 create some files and directory so that you could see these in mounted drive/directory.
@@ -58,14 +59,15 @@ pip install fusepy
 ```
 Refer [here](https://pypi.org/project/fusepy/) for installation reference and troubleshoot.
 
-## Working Feature
+### Working Feature
 > TODO
-## Future Scope
+### Future Scope
 > TODO
-## Troubleshooting
+### Troubleshooting
 > TODo
-## Authors
+### Authors
 
 * [Rajesh Dansena](https://github.com/rajedan) : 20163005
 * [Svl Sarat Chandra](https://github.com/saratIIIT) : 2018202013
 * [Yaswanth Koravi](https://github.com/yaswanthkoravi) : 2018202011
+
