@@ -67,6 +67,7 @@ Refer [here](https://pypi.org/project/fusepy/) for fusepy installation reference
 git clone git@github.com:rajedan/GDrive.git
 ```
 or download and unzip it.
+
 2. Create two empty repository. For example : ~/temp1 ~/temp2
 Here, temp1 directory is where we are going to mount the google drive and 
 temp2 directory will be used as temporary directory for different operations. 
