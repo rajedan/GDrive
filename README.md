@@ -68,12 +68,12 @@ git clone git@github.com:rajedan/GDrive.git
 ```
 or download and unzip it.
 
-2. Create two empty repository. For example : ~/temp1 ~/temp2
+2. Create two empty directory. For example : ~/temp1 ~/temp2
 Here, temp1 directory is where we are going to mount the google drive and 
 temp2 directory will be used as temporary directory for different operations. 
 Please do not store anything here.
 3. Open Terminal and navigate to ```GDrive/fuse/``` and run the below command:
-python ~/temp1 ~/temp2
+python myfuse.py ~/temp1 ~/temp2
 4. For the first time, It will open browser and ask to login into your gmail account and 
 ask for permission. This is one time setup and won't ask on next run. Please login and accept permission.
 5. temp1 is the directory where google drive has been mounted. Now open temp1 directory in terminal/file explorer and you can perform the features mentioned.
@@ -81,11 +81,11 @@ ask for permission. This is one time setup and won't ask on next run. Please log
 ### Working Features
 1. ```ls``` and ```ls -lrt``` command in mounted directory. It will list out all the files and folders of google drive.
 
-2. Create Folder through File explorer in mounted directory. New Folder will be reflected in google drive.
+2. Create Folder through File explorer in mounted directory. New Folder will be reflected into google drive.
 
-3. Delete Folder through File explorer in mounted directory. New Folder will be reflected in google drive.
+3. Delete Folder through File explorer in mounted directory. Folder deletion will be reflected into google drive.
 
-4. Create or Paste a txt or image File through File explorer. New File will be reflected into google drive.
+4. Create or copy-paste a txt or image File through File explorer. New File will be reflected into google drive.
 
 5. Edit any existing txt File through File explorer and gedit or through vi in terminal. Changes will be reflected into the file in google drive after saving the file changes.
 
@@ -97,13 +97,12 @@ ask for permission. This is one time setup and won't ask on next run. Please log
 
 There can be numerous scope to this project. Some of them are as follows:
 * File/Folder access or deletion based on it's ownership.
-* Access to Google drive Trash and moving files/folders to Trash on deletion instead of permanent delete.
-* etc.
+* Access to Google drive Trash and moving files/folders to Trash on deletion instead of permanent delete. etc.
 
 ### Troubleshooting
 
 * We have came across error when you exhaust the google drive API daily limit. In this case, you need to use different account for setup or wait and use next day.
-* Please shoot a mail to authors or file a bug stating the scenarios and screenshots/logs (if any).
+* Please shoot a mail to authors or file a bug [here](https://github.com/rajedan/GDrive/issues) stating the scenarios and screenshots/logs (if any).
 
 ### Authors
 
