@@ -74,6 +74,18 @@ def view():
         #     print(i)
         pass
     return items
+
+def view_names():
+    results = service.files().list(fields="nextPageToken, files(name)").execute()
+    items = results.get('files', [])
+    result = []
+    if not items:
+        print('No files found.')
+        return result
+    else:
+        for it in items:
+            result.append(it['name'])
+    return result
             
 def all_upload():    
     a=os.getcwd()+'/sam'
@@ -122,8 +134,27 @@ def meta():
         for i in items:
             print(u'{0}' u'{1}' u'{2}'.format(i['createdTime'],i['modifiedTime'],i['size']))
         
-    
+def get_metadata(file_name):
+    query = "name contains '"+file_name+"'"
+    #drive_service = initialze()
+    results = service.files().list(
+        pageSize=1, fields="nextPageToken, files(id, name, kind, mimeType, size)", q=query).execute()
+    items = results.get('files', [])
+    if(items==None or len(items)==0):
+        return None
+    return items[0]
+
+def is_file_exist(file_name):
+    item = get_metadata(file_name)
+    if(item == None):
+        return False
+    if (item['name'] == file_name):
+        return True
+    else:
+        return False
 
 if __name__ == '__main__' :
-    meta()
-    
+    #a = get_metadata("new-folder")
+    #print(a)
+    items = is_file_exist("new-folder")
+    print(items)
